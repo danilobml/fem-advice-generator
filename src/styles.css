@@ -1,0 +1,87 @@
+:root {
+--LightCyan: hsl(193, 38%, 86%);
+--NeonGreen: hsl(150, 100%, 66%);
+--GrayishBlue: hsl(217, 19%, 38%);
+--DarkGrayishBlue: hsl(217, 19%, 24%);
+--DarkBlue: hsl(218, 23%, 16%);
+font-family: 'Manrope', sans-serif;
+
+}
+
+html{ 
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+     box-sizing:inherit;
+  }
+
+  .body{
+      background-color: var(--DarkBlue);
+      height: 100vh;
+  }
+
+  .main{
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 0.6rem;
+    height:fit-content;
+    min-height: 320px;
+    position:relative;
+  }
+
+  .advice {
+      color: var(--NeonGreen);
+      font-weight: bold;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      letter-spacing: 2.5px;
+  }
+
+  .advice-text {
+      font-size: 28px;
+      color: var(--LightCyan);
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+
+  .divider{
+      margin-top: 1rem;
+  }
+
+  .div-button {
+      display: block;
+      position: absolute;
+      top:90%;
+      width: 59px;
+      padding: 1.1rem;
+      background-color: var(--NeonGreen);
+      border-radius: 50%;
+      cursor: pointer;
+  }
+
+  .icon-dice {
+      width: 22px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+
+.attribution a {
+    color: hsl(228, 59%, 65%);
+  }
+
+@media screen and (min-width:376px) {
+    .div-button {
+        background-color: hsla(150, 100%, 66%, 0.8);
+        transition: all 0.2s ease-in-out;
+    }
+    .div-button:hover {
+        background-color: hsla(150, 100%, 66%, 1);
+        box-shadow: 0 5px 15px hsla(100, 80%, 45%, 1);
+    } 
+    
+}
